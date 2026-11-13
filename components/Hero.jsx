@@ -1,10 +1,10 @@
 import Link from "next/link"
 import Image from "next/image"
-
+import Button from "./ui/Button"
 export default function Hero() {
   return (
-    <section id="hero" className="min-h-screen pt-32 border-b-1 border-b-[#A5B4FC]">
-      <div className="mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1440px] items-center justify-between gap-10 px-8 md:px-12 lg:px-20 xl:px-24">
+    <section id="hero" className="h-screen border-b border-[#A5B4FC] bg-transparent">
+      <div className="mx-auto flex min-h-screen max-w-[1440px] items-center justify-between gap-10 px-8 pt-32 md:px-12 lg:px-20 xl:px-24">
 
         <div className="min-w-0 flex-1">
           
@@ -24,19 +24,8 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex gap-5">
-            <Link
-              href="#projet"
-              className="rounded-[13px] bg-[#6366F1] px-5 py-3 text-[16px] font-semibold text-white transition hover:bg-indigo-700"
-            >
-              Voir mes projets
-            </Link>
-
-            <Link
-              href="#"
-              className="rounded-[13px] bg-[#1A1E28] px-5 py-3 text-[16px] font-semibold text-white transition hover:bg-slate-800"
-            >
-              Télécharger mon CV
-            </Link>
+            <Button text="Voir mes projets" href="#projet" />
+            <Button text="Télécharger mon CV" href="#" variant="secondary" />
           </div>
         </div>
 

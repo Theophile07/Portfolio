@@ -1,25 +1,33 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
   --foreground: #171717;
+
   --bg-gradient: linear-gradient(
-    108deg,
-    #F0F0FF 0%,
-    #818CF8 100%
-  );
+  196deg,
+  #A5A7F5 0%,
+  #BFC0F6 12%,
+  #D5D5F8 24%,
+  #E8E8FC 38%,
+  #F0F0FF 55%,
+  #FAFAFF 100%
+);
 }
 
 html {
-  min-height: 100%;
   scroll-behavior: smooth;
-  background: var(--bg-gradient);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
-  background: transparent;
   color: var(--foreground);
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: 'Plus Jakarta Sans';
+}
+
+.page-background {
+  min-height: 100vh;
+  background-image: var(--bg-gradient);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }

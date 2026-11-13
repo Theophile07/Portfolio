@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import Button from "./ui/Button"
 const navLinks = [
     { label : "À propos", href: "#about"},
     { label : "Mes services", href: "#service"},
@@ -10,12 +10,14 @@ export default function Navbar(){
     return(
         <>
             <header className="fixed left-0 top-0 z-50 w-full px-6 pt-6 md:px-10 lg:px-16">
-                <nav className="mx-auto p-20 flex max-w-7xl bg-white rounded-2xl items-center justify-between px-6 py-5 lg:px-8">
+                <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-2xl bg-white px-6 py-5 lg:px-8">
                     <Link 
                     href='/'
                     className="text-xl font-bold tracking-tight text-slate-950"
                     >
-                        Théophile Lumbala
+                        <span className="text-[#6366F1] text-3xl">{"<"}</span>
+                            {" Théophile Lumbala "}
+                        <span className="text-[#6366F1] text-3xl">{"/>"}</span>
                     </Link>
 
                     <div className="hidden items-center gap-5 md:flex">
@@ -30,12 +32,7 @@ export default function Navbar(){
                         ))}
                     </div>
 
-                    <Link
-                    href="#contact"
-                    className="hidden rounded-[13px] bg-[#6366F1] px-5 py-2.5 text-[16px] font-semibold text-white transition hover:bg-blue-700 md:block"
-                    >
-                        Me contacter
-                    </Link>
+                    <Button text="Me contacter" href="#contact"/>
                 </nav>
             </header>
 
