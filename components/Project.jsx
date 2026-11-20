@@ -1,34 +1,44 @@
 import ProjectCard from "./ui/ProjectCard"
 import projects from "../data/project"
+import Link from "next/link"
 export default function Project(){
 
     return(
         <>
-        <div id="projects" className="h-screen border-b border-[#A5B4FC] bg-transparent transition-colors">
-            <div className="mx-auto min-h-screen max-w-[1440px] items-center justify-between gap-10 px-8 pt-32 md:px-12 lg:px-20 xl:px-24">
-                <div className="min-w-0 flex-1">
-                    <h2 className="text-3xl font-bold mb-5 text-slate-950">
+        <section id="project" className="min-h-screen border-b border-[#A5B4FC]/60 bg-transparent">
+            <div className="mx-auto max-w-[1440px] px-8 pt-32 pb-24 md:px-12 lg:px-20 xl:px-24">
+                <div className="mb-12">
+                    <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#6366F1]">
+                        Portfolio
+                    </p>
+                    <h2 className="mb-5 text-3xl font-bold text-slate-950 md:text-4xl">
                         Mes projets
                     </h2>
-                    <p className="text-lg font-semibold mb-5 text-slate-700">
+
+                    <p className="max-w-[650px] text-base font-semibold leading-8 text-slate-600 md:text-lg">
                         Des idées transformées en réalisations concrètes.
-                    </p>
-                    <p className="text-lg text-[#6366F1] max-w-[620px]">
-                        Chaque projet est une occasion d’explorer de nouvelles approches, 
-                        de résoudre des problèmes et de concevoir des expériences digitales utiles, 
+                        Chaque projet est une occasion d'explorer de nouvelles
+                        approches et de concevoir des expériences digitales utiles,
                         performantes et intuitives.
                     </p>
                 </div>
-
-                <div className="flex flex-1 items-stretch gap-5">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {projects.map((project) => (
-                        <ProjectCard key={project.id} title={project.title} description={project.description} image={project.image} />
-                    ))
-                    }
+                        <ProjectCard key={project.id} project={project} />
+                    ))}
+                </div>
+                
+                <div className="mt-12 flex justify-center">
+                    <Link
+                        href="/projects"
+                        className="inline-flex items-center gap-2 rounded-xl border border-[#6366F1] px-6 py-3 text-sm font-semibold text-[#6366F1] transition-all duration-300 hover:bg-[#6366F1] hover:text-white"
+                    >
+                        Voir tous les projets
+                        <span aria-hidden="true">→</span>
+                    </Link>
                 </div>
             </div>
-
-        </div>
+        </section>
         
         </>
         
