@@ -1,14 +1,16 @@
 
 export default function FeatureCard({ title, description }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-[#A5B4FC]/60 bg-white/40 p-5 transition duration-300 hover:-translate-y-1 hover:border-[#6366F1] hover:shadow-lg hover:bg-white/90">
-      <h3 className="mb-3 text-lg font-bold leading-snug text-[#6366F1]">
+    <article className="flex h-full min-w-0 flex-col rounded-2xl border border-[#A5B4FC]/60 bg-white/40 p-4 transition duration-300 hover:-translate-y-1 hover:border-[#6366F1] hover:bg-white/90 hover:shadow-lg sm:p-5">
+
+      <h3 className="mb-2 text-base font-bold leading-snug text-[#6366F1] sm:mb-3 sm:text-lg">
         {title}
       </h3>
 
-      <p className="text-sm leading-7 text-[#262B38]">
+      <p className="text-sm leading-6 text-[#262B38] sm:leading-7">
         {description}
       </p>
+
     </article>
   );
 }
