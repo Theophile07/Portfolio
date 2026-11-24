@@ -37,7 +37,7 @@ export default function Contact(){
                         <h2 className="max-w-[654px] text-center text-5xl font-bold leading-tight tracking-tight text-slate-950 lg:text-5xl">
                             Vous avez un projet ? Construisons-le ensemble.
                         </h2>
-                        <p className="mt-6 max-w-[650px] text-lg leading-8 text-[#262B38] md:text-xl">
+                        <p className="mt-6 max-w-[650px] text-lg leading-8 text-[#262B38] md:text-lg">
                             Donnons vie à vos projets web. <br />Contactez-moi pour échanger sur vos besoins.
                         </p>
                     </div>

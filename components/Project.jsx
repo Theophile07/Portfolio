@@ -11,7 +11,7 @@ export default function Project(){
                     <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-[#6366F1]">
                         Portfolio
                     </p>
-                    <h2 className="mb-5 text-3xl font-bold text-slate-950 md:text-4xl">
+                    <h2 className="mb-5 text-3xl font-bold text-slate-950 lg:text-4xl">
                         Mes projets
                     </h2>
 
