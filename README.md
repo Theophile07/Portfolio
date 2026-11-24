@@ -148,8 +148,7 @@ Je m'intéresse à la création de solutions numériques qui associent technolog
 
 ### Me retrouver
 
-- GitHub : [Ajouter mon profil GitHub](https://github.com/)
-- LinkedIn : [Ajouter mon profil LinkedIn](https://www.linkedin.com/)
+- LinkedIn : ([https://www.linkedin.com/](https://www.linkedin.com/in/th%C3%A9ophile-lumbala-aa8874242/))
 
 ---
 
